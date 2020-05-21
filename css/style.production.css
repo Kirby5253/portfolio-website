@@ -431,3 +431,8 @@ Perf*/
 	padding: 10px;
 	color: white;
 }
+
+.call-to-action {
+	font-weight: 700;
+	font-size: 24px;
+}
