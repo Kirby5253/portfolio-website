@@ -219,7 +219,7 @@ a:active,
 
 /*Implement a transition of a button*/
 .button {
-	/*Overwrites browser defualts and resets border*/
+	/*Overwrites browser defaults and resets border*/
 	border: none;
 	margin-bottom: 20px;
 	display: inline-block;
