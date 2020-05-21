@@ -1,0 +1,354 @@
+/*Defines a variable when adding the --notation*/
+:root {
+	--light-gray-color:/*(Light Gray/Silver)*/ #d1d0d0;
+	--gray-color: rgb(65, 65, 65);
+	--third-gray-color: #808080;
+	--black-color: black;
+	--white-color: white;
+	--greenish-color: #208149;
+	--dark-grey-color: rgb(65, 65, 65);
+	--sun-start-color: #edc655;
+	--sun-end-color: #f76414;
+	--bold-font: 700;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	background-color: var(--light-gray-color);
+	max-width: 80%;
+	margin: auto;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: var(--bold-font);
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: var(--bold-font);
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: var(--bold-font);
+}
+
+a:not(button) {
+	color: var(--black-color);
+}
+
+a:visited {
+	/*Visited Link*/
+	color: var(--greenish-color);
+}
+
+a:hover,
+a:focus {
+	/*No underlining when hovering over a link*/
+	text-decoration: none;
+}
+
+/*Allows links and submit button to lighten up when activated*/
+a:active,
+#msg-submit:active {
+	opacity: 0.5;
+}
+
+/*Sets current nav bar tab to look like it's in use*/
+.navigation-list__item--active {
+	text-decoration: none;
+	cursor: default;
+}
+
+/*Sets font for the nav bar items*/
+.navigation-list__item,
+.navigation-list__item--active {
+	font-weight: var(--bold-font);
+	font-size: 20px;
+}
+
+.standard-label {
+	font-weight: var(--bold-font);
+}
+
+/*Custom form submit button*/
+#msg-submit,
+.button {
+	cursor: pointer;
+	background-color: #666;
+	color: var(--white-color);
+	border-radius: 5px;
+}
+
+/*Allows faded icon on hover*/
+.social-icon:hover {
+	opacity: 0.6;
+}
+
+/*Stylizes profile portrait*/
+.profile__portrait {
+	float: left;
+	width: 250px;
+	margin-right: 40px;
+	border-radius: 50%;
+}
+
+.page-footer {
+	/*Clears footer from flex image*/
+	clear: both;
+	/*Makes icons more flexible and moves them as 1*/
+	display: flex;
+	/*Change direction to top-to-bottom*/
+	flex-direction: column;
+	/*Makes icons align center of page*/
+	text-align: center;
+}
+
+.profile {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+/*Tells the browser to account for any border and padding in the values you specify for an element's width and height*/
+* {
+	box-sizing: border-box;
+}
+
+/*Allows nav bar to cover full width of page*/
+.page-header {
+	display: flex;
+	width: 100%;
+	padding: 20px;
+	border-bottom: 2px solid var(--black-color);
+	margin: auto;
+}
+
+/*Sets header to be a flex item that has a limit of 200 px(won't grow)*/
+.page-header__item {
+	flex: 0 0 300px;
+}
+
+/*Overwrites the flex for the navigation bar so that it can grow while the icon can stay the same.*/
+.page-header__item:last-child {
+	flex-grow: 1;
+	text-align: right;
+}
+
+/*Deletes the bullet points from nav bar*/
+.navigation-list {
+	list-style-type: none;
+}
+
+/*Put nav bar into a row with space, need to specify the actual list with li*/
+.navigation-list li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+#logo {
+	margin: auto;
+}
+
+/*Grid fallback for legacy browsers*/
+.grid__item {
+	display: inline-block;
+	width: 33%;
+}
+
+/*Uses CSS grid to organize works into grid layout, only need to define columns b/c rows will be automatic */
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	grid-gap: 20px;
+}
+
+.grid__item {
+	background-color: var(--third-gray-color);
+	padding: 10px;
+	/*Set width to auto to tak width of grid container*/
+	width: auto;
+}
+
+.about,
+.contact {
+	display: flex;
+	max-width: 750px;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	/*Don't forget to add this to align to the middle of page*/
+	margin: 0 auto;
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 75%;
+}
+
+/*Allows grid to be resized for small devices*/
+@media all and (max-width: 500px) {
+	.grid {
+		/* Changes grid to 1 column*/
+		grid-template-columns: 1fr;
+	}
+}
+
+/*Allows grid to shrink fluidly as screen size gets smaller*/
+@media all and (min-width: 500px) and (max-width: 750px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/*Combine the commons into one single group*/
+@media all and (max-width: 750px) {
+	.grid {
+		grid-gap: 10px;
+	}
+	h1 {
+		font-size: 22px;
+	}
+}
+
+/*Implement a transition of a button*/
+.button {
+	/*Overwrites browser defualts and resets border*/
+	border: none;
+	margin-bottom: 20px;
+	display: inline-block;
+	/*Takes font from outside*/
+	font-family: inherit;
+	/*STYLE*/
+	background-color: var(--black-color);
+	color: var(--white-color);
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	/*width of the border, type color*/
+	border-bottom: 2px solid var(--black-color);
+	transition-duration: 0.2s;
+	transition-property: width, opacity;
+}
+
+.button:hover {
+	/*convert mouse to pointer finger*/
+	cursor: pointer;
+	/*change opacity to 80%*/
+	width: 160px;
+	opacity: 0.6;
+}
+
+/*Alternative/cleaner method for combining transition lines.*/
+.button {
+	/* overwrites browser defaults and resets the border */
+	border: none;
+	display: inline-block;
+	/* takes the font from the outer container */
+	font-family: inherit;
+	/* style button */
+	background-color: var(--black-color);
+	color: var(--white-color);
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	/* width of the border, type, color */
+	border-bottom: 2px solid var(--black-color);
+	transition: 0.2s opacity;
+}
+
+.button:visited {
+	color: var(--white-color);
+	width: auto;
+}
+
+/*Color change is the name of the animation to help define it*/
+@keyframes color-change {
+	from {
+		fill: var(--sun-start-color);
+	}
+	to {
+		fill: var(--sun-end-color);
+	}
+}
+
+/*add a third color to your animation once it’s halfway through:*/
+/*@keyframes color-change {
+	0% {
+		fill: #edc655;
+	}
+	50% {
+		fill: #fcffad;
+	}
+	100% {
+		fill: #f76414;
+	}
+}
+Perf*/
+
+/*Allows the sun in the SVG to change colors for 4s, infinitely from the color change keyframe*/
+.sun {
+	animation: 4s color-change infinite alternate linear;
+}
+
+/*Defines the animation for translation*/
+@keyframes cloud-move {
+	from {
+		transform: translate(0, 50px);
+	}
+	to {
+		transform: translate(200px, 50px);
+	}
+}
+
+.cloud-front {
+	animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+	from {
+		transform: translate(446px, 48px);
+	}
+	to {
+		transform: translate(100px, 48px);
+	}
+}
+
+.cloud-back {
+	animation: 45s cloud-move-reverse infinite alternate linear;
+}
+
+.navigation-list__item {
+	transition-timing-function: linear;
+	transition-duration: 0.2s;
+	transition-property: opacity, color, background-color, font-size;
+}
+
+.navigation-list__item:hover {
+	opacity: 0.5;
+	color: var(--white-color);
+	background-color: var(--third-gray-color);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#webdev {
+	background-color: var(--dark-grey-color);
+	color: var(--white-color);
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	border-radius: 25%;
+}
+
+.grid-link {
+	background-color: var(--black-color);
+	padding: 10px;
+	color: var(--white-color);
+}

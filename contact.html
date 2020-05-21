@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Jake's Portfolio</title>
+	<link rel="shortcut icon" href="img/kirby_icon.png" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/style.production.css" />
+</head>
+
+<body>
+	<header class="page-header">
+		<!--Personalized logo here-->
+		<img src="img/kirby_logo.png" width="200" alt="Personal logo of Jacob Kirby." class="page-header__item" id="logo" />
+		<nav class="main-navigation page-header__item">
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<a href="index.html" role="menuitem" class="navigation-list__item">
+						Home
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="about.html" role="menuitem" class="navigation-list__item">
+						About Me
+					</a>
+				</li>
+				<li role="presentation">
+					<p href="contact.html" role="menuitem" class="navigation-list__item--active">
+						Contact
+					</p>
+				</li>
+				<li role="presentation">
+					<a href="work.html" role="menuitem" class="navigation-list__item">
+						Work
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="contact">
+		<h1>Contact</h1>
+		<!--Fix contact info later-->
+		1234 Alamo Dr
+		<br />
+		Royse City, TX 75189
+		<br />
+		<br />
+		<!--Interested more succinct way to use phone number with screen reader?-->
+		Phone:
+		<a href="Tel:8177983450" aria-label="number 8 1 7. 7 9 8. 3 4 5 0.">
+			(817) 798-3450
+		</a>
+		<br />
+		Skype:
+		<a href="Skype:kirby5253">kirby5253</a>
+		<br />
+		E-mail:
+		<a href="mailto:kirby_jake@yahoo.com">kirby_jake@yahoo.com</a>
+		<br />
+		<br />
+		<!--Call to action-->
+		<a href="mailto:kirby_jake@yahoo.com">Contact Me</a>
+		<!--Contact Form-->
+		<form action="" method="post" id="contact-form">
+			<label class="standard-label" for="contact-email">E-mail:</label>
+			<input type="email" id="contact-email" required />
+
+			<label class="standard-label" for="contact-tel">Telephone:</label>
+			<input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+
+			<label class="standard-label" for="contact-msg">Message:</label>
+			<textarea maxlength="240" id="contact-msg" required></textarea>
+
+			<input type="submit" id="msg-submit" value="Send Message" />
+		</form>
+	</div>
+
+	<footer class="page-footer">
+		<p>Find me on</p>
+		<div class="social-media">
+			<!--Facebook Logo Link-->
+			<a href="https://www.facebook.com/kirby.jake/" target="_blank">
+				<img src="img/facebook_icon.svg" class="social-icon" alt="Facebook" />
+			</a>
+			<!--Github Logo Link-->
+			<a href="https://github.com/Kirby5253" target="_blank">
+				<img src="img/github_icon.svg" class="social-icon" alt="GitHub" />
+			</a>
+			<!--Twitter Logo Link-->
+			<a href="https://twitter.com/the_real_jkirby" target="_blank">
+				<img src="img/twitter_icon.svg" class="social-icon" alt="Twitter" />
+			</a>
+			<!--Linkedin Logo Link-->
+			<a href="https://www.linkedin.com/in/jake-kirby-507775b0/" target="_blank">
+				<img src="img/linkedin_icon.svg" class="social-icon" alt="LinkedIn" />
+			</a>
+		</div>
+	</footer>
+
+	<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
