@@ -7,10 +7,6 @@
 
 /* Defines a variable when adding the --notation */
 
-:root {
-	-light-gray-color: /* (Light Gray/Silver) */ #d1d0d0;
-}
-
 body {
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
@@ -138,7 +134,7 @@ a:active,
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	padding: 20px;
+	padding: 5px;
 	border-bottom: 2px solid black;
 	margin: auto;
 }
@@ -447,4 +443,12 @@ Perf */
 .work {
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+@media all and (max-width: 900px) {
+	.navigation-list__item,
+	.navigation-list__item--active {
+		font-size: 15px;
+		display: flex;
+	}
 }
