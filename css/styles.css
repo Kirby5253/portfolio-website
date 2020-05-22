@@ -177,7 +177,8 @@ a:active,
 }
 
 .about,
-.contact {
+.contact,
+.work {
 	display: flex;
 	max-width: 750px;
 	text-align: center;

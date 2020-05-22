@@ -193,7 +193,8 @@ a:active,
 }
 
 .about,
-.contact {
+.contact,
+.work {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
