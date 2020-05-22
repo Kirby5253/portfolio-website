@@ -444,11 +444,3 @@ Perf */
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
-@media all and (max-width: 900px) {
-	.navigation-list__item,
-	.navigation-list__item--active {
-		font-size: 15px;
-		display: flex;
-	}
-}
