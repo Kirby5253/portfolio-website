@@ -192,7 +192,8 @@ a:active,
 }
 
 .about,
-.contact {
+.contact,
+.work {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -435,4 +436,9 @@ Perf*/
 .call-to-action {
 	font-weight: 700;
 	font-size: 24px;
+}
+
+.work {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
