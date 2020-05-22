@@ -1,8 +1,7 @@
 /* Defines a variable when adding the --notation */
 
 :root {
-	-light-gray-color: /* (Light Gray/Silver) */ #d1d0d0;
-
+	--light-gray-color: /* (Light Gray/Silver) */ #d1d0d0;
 	--gray-color: rgb(65, 65, 65);
 	--third-gray-color: #808080;
 	--black-color: black;
