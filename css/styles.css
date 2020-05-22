@@ -352,3 +352,13 @@ Perf*/
 	padding: 10px;
 	color: var(--white-color);
 }
+
+.call-to-action {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.work {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
