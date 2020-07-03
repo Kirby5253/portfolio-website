@@ -38,7 +38,7 @@ a:not(button) {
 
 a:visited {
 	/* Visited Link */
-	color: #208149;
+	color: #4e4e4e;
 }
 
 a:hover,
@@ -190,6 +190,7 @@ a:active,
 	padding: 10px;
 	/* Set width to auto to tak width of grid container */
 	width: auto;
+	padding-bottom: 20px;
 }
 
 .about,
@@ -224,7 +225,7 @@ a:active,
 }
 
 /* Allows grid to be resized for small devices */
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
 	.grid {
 		/* Changes grid to 1 column */
 		-ms-grid-columns: 1fr;
@@ -233,7 +234,7 @@ a:active,
 }
 
 /* Allows grid to shrink fluidly as screen size gets smaller */
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 780px) and (max-width: 1200px) {
 	.grid {
 		-ms-grid-columns: 1fr 20px 1fr;
 		grid-template-columns: 1fr 1fr;
@@ -305,6 +306,10 @@ a:active,
 .button:visited {
 	color: white;
 	width: auto;
+}
+
+.work-img {
+	width: 300px;
 }
 
 /* Color change is the name of the animation to help define it */
@@ -431,9 +436,21 @@ Perf */
 }
 
 .grid-link {
-	background-color: black;
+	display: grid;
+	background-color: rgba(22, 22, 22, 0.795);
 	padding: 10px;
 	color: white;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.grid-link:hover {
+	background-color: rgba(22, 22, 22, 0.644);
+}
+
+.grid-link:visited {
+	/* Visited Link */
+	color: #9c9c9c;
 }
 
 .call-to-action {
