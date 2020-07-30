@@ -8,327 +8,302 @@
 /* Defines a variable when adding the --notation */
 
 body {
-	font-family: "Lato", sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.6;
-	background-color: #d1d0d0;
-	max-width: 80%;
-	margin: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #1f1f1f;
+  max-width: 80%;
+  margin: auto;
+  color: white;
 }
 
 h1 {
-	font-size: 30px;
-	font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 h2 {
-	font-size: 24px;
-	font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 h3 {
-	font-size: 18px;
-	font-weight: 700;
-}
-
-a:not(button) {
-	color: black;
-}
-
-a:visited {
-	/* Visited Link */
-	color: #4e4e4e;
-}
-
-a:hover,
-a:focus {
-	/* No underlining when hovering over a link */
-	text-decoration: none;
-}
-
-/*  Allows links and submit button to lighten up when activated */
-a:active,
-#msg-submit:active {
-	opacity: 0.5;
-}
-
-/* Sets current nav bar tab to look like it's in use */
-
-.navigation-list__item--active {
-	text-decoration: none;
-	cursor: default;
-}
-
-/* Sets font for the nav bar items */
-.navigation-list__item {
-	font-weight: 700;
-	font-size: 20px;
-}
-.navigation-list__item--active {
-	font-weight: 700;
-	font-size: 20px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .standard-label {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 /* Custom form submit button */
 #msg-submit {
-	cursor: pointer;
-	background-color: #666;
-	color: white;
-	border-radius: 5px;
+  cursor: pointer;
+  background-color: #343a40;
+  color: white;
+  border-radius: 5px;
 }
 .button {
-	cursor: pointer;
-	background-color: #666;
-	color: white;
-	border-radius: 5px;
+  cursor: pointer;
+  background-color: #666;
+  color: white;
+  border-radius: 5px;
+}
+
+.social-icon {
+  max-width: 39px;
+  margin-bottom: 30px;
+  color: white;
+  margin: 5px;
 }
 
 /* Allows faded icon on hover */
 .social-icon:hover {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 /* Stylizes profile portrait */
 .profile__portrait {
-	float: left;
-	width: 250px;
-	margin-right: 40px;
-	border-radius: 50%;
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
 }
 
 .page-footer {
-	/* Clears footer from flex image */
-	clear: both;
-	/* Makes icons more flexible and moves them as 1 */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	/* Change direction to top-to-bottom */
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	/* Makes icons align center of page */
-	text-align: center;
+  /* Clears footer from flex image */
+  clear: both;
+  /* Makes icons more flexible and moves them as 1 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Change direction to top-to-bottom */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* Makes icons align center of page */
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .profile {
-	max-width: 700px;
-	margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* Tells the browser to account for any border and padding in the values you specify for an element's width and height */
 * {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Allows nav bar to cover full width of page */
 .page-header {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 100%;
-	padding: 5px;
-	border-bottom: 2px solid black;
-	margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 2px solid black;
+  margin: auto;
+  font-weight: 700;
 }
 
 /* Sets header to be a flex item that has a limit of 200 px(won't grow) */
 .page-header__item {
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 300px;
-	flex: 0 0 300px;
+  -webkit-box-flex: 0;
 }
 
 /* Overwrites the flex for the navigation bar so that it can grow while the icon can stay the same. */
 .page-header__item:last-child {
-	-webkit-box-flex: 1;
-	-ms-flex-positive: 1;
-	flex-grow: 1;
-	text-align: right;
-}
-
-/* Deletes the bullet points from nav bar */
-.navigation-list {
-	list-style-type: none;
-}
-
-/* Put nav bar into a row with space, need to specify the actual list with li */
-.navigation-list li {
-	display: inline-block;
-	margin-left: 15px;
-}
-
-#logo {
-	margin: auto;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
 }
 
 /* Grid fallback for legacy browsers */
 .grid__item {
-	display: inline-block;
-	width: 33%;
+  display: inline-block;
+  width: 33%;
 }
 
 /* Uses CSS grid to organize works into grid layout, only need to define columns b/c rows will be automatic */
 .grid {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
-	text-align: center;
-	grid-gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 20px;
 }
 
 .grid__item {
-	background-color: #808080;
-	padding: 10px;
-	/* Set width to auto to tak width of grid container */
-	width: auto;
-	padding-bottom: 20px;
+  background-color: #808080;
+  padding: 10px;
+  /* Set width to auto to tak width of grid container */
+  width: auto;
+  padding-bottom: 20px;
 }
 
 .about,
 .contact,
 .work {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	max-width: 750px;
-	text-align: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	/* Don't forget to add this to align to the middle of page */
-	margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 750px;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Don't forget to add this to align to the middle of page */
+  margin: 0 auto;
 }
 
-#contact-form {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	text-align: left;
-	width: 75%;
+#gform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  width: 75%;
+}
+
+label {
+  text-align: left;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* Allows grid to be resized for small devices */
 @media all and (max-width: 800px) {
-	.grid {
-		/* Changes grid to 1 column */
-		-ms-grid-columns: 1fr;
-		grid-template-columns: 1fr;
-	}
+  .grid {
+    /* Changes grid to 1 column */
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile__portrait {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 /* Allows grid to shrink fluidly as screen size gets smaller */
 @media all and (min-width: 780px) and (max-width: 1200px) {
-	.grid {
-		-ms-grid-columns: 1fr 20px 1fr;
-		grid-template-columns: 1fr 1fr;
-	}
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Combine the commons into one single group */
 @media all and (max-width: 750px) {
-	.grid {
-		grid-gap: 10px;
-	}
-	h1 {
-		font-size: 22px;
-	}
+  .grid {
+    grid-gap: 10px;
+  }
+  h1 {
+    font-size: 22px;
+  }
 }
 
 /* Implement a transition of a button */
 .button {
-	/* Overwrites browser defaults and resets border */
-	border: none;
-	margin-bottom: 20px;
-	display: inline-block;
-	/* Takes font from outside */
-	font-family: inherit;
-	/* STYLE */
-	background-color: black;
-	color: white;
-	text-decoration: none;
-	padding: 10px;
-	border-radius: 3px;
-	/* width of the border, type color */
-	border-bottom: 2px solid black;
-	-webkit-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
-	transition-duration: 0.2s;
-	-webkit-transition-property: width, opacity;
-	-o-transition-property: width, opacity;
-	transition-property: width, opacity;
+  /* Overwrites browser defaults and resets border */
+  border: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  /* Takes font from outside */
+  font-family: inherit;
+  /* STYLE */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type color */
+  border-bottom: 2px solid black;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: width, opacity;
+  -o-transition-property: width, opacity;
+  transition-property: width, opacity;
 }
 
 .button:hover {
-	/* convert mouse to pointer finger */
-	cursor: pointer;
-	/* change opacity to 80% */
-	width: 160px;
-	opacity: 0.6;
+  /* convert mouse to pointer finger */
+  cursor: pointer;
+  /* change opacity to 80% */
+  width: 160px;
+  opacity: 0.6;
 }
 
 /* Alternative/cleaner method for combining transition lines. */
 .button {
-	/* overwrites browser defaults and resets the border */
-	border: none;
-	display: inline-block;
-	/* takes the font from the outer container */
-	font-family: inherit;
-	/* style button */
-	background-color: black;
-	color: white;
-	text-decoration: none;
-	padding: 10px;
-	border-radius: 3px;
-	/* width of the border, type, color */
-	border-bottom: 2px solid black;
-	-webkit-transition: 0.2s opacity;
-	-o-transition: 0.2s opacity;
-	transition: 0.2s opacity;
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid black;
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 .button:visited {
-	color: white;
-	width: auto;
+  color: white;
+  width: auto;
 }
 
 .work-img {
-	width: 300px;
+  width: 300px;
 }
 
 /* Color change is the name of the animation to help define it */
 @-webkit-keyframes color-change {
-	from {
-		fill: #edc655;
-	}
-	to {
-		fill: #f76414;
-	}
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
 }
 
 @keyframes color-change {
-	from {
-		fill: #edc655;
-	}
-	to {
-		fill: #f76414;
-	}
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
 }
 
 /* add a third color to your animation once it’s halfway through: */
@@ -347,118 +322,122 @@ Perf */
 
 /* Allows the sun in the SVG to change colors for 4s, infinitely from the color change keyframe */
 .sun {
-	-webkit-animation: 4s color-change infinite alternate linear;
-	animation: 4s color-change infinite alternate linear;
+  -webkit-animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 /* Defines the animation for translation */
 @-webkit-keyframes cloud-move {
-	from {
-		-webkit-transform: translate(0, 50px);
-		transform: translate(0, 50px);
-	}
-	to {
-		-webkit-transform: translate(200px, 50px);
-		transform: translate(200px, 50px);
-	}
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move {
-	from {
-		-webkit-transform: translate(0, 50px);
-		transform: translate(0, 50px);
-	}
-	to {
-		-webkit-transform: translate(200px, 50px);
-		transform: translate(200px, 50px);
-	}
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
-	-webkit-animation: 30s cloud-move infinite alternate linear;
-	animation: 30s cloud-move infinite alternate linear;
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
-	from {
-		-webkit-transform: translate(446px, 48px);
-		transform: translate(446px, 48px);
-	}
-	to {
-		-webkit-transform: translate(100px, 48px);
-		transform: translate(100px, 48px);
-	}
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-	from {
-		-webkit-transform: translate(446px, 48px);
-		transform: translate(446px, 48px);
-	}
-	to {
-		-webkit-transform: translate(100px, 48px);
-		transform: translate(100px, 48px);
-	}
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
-	-webkit-animation: 45s cloud-move-reverse infinite alternate linear;
-	animation: 45s cloud-move-reverse infinite alternate linear;
+  -webkit-animation: 45s cloud-move-reverse infinite alternate linear;
+  animation: 45s cloud-move-reverse infinite alternate linear;
 }
 
 .navigation-list__item {
-	-webkit-transition-timing-function: linear;
-	-o-transition-timing-function: linear;
-	transition-timing-function: linear;
-	-webkit-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
-	transition-duration: 0.2s;
-	-webkit-transition-property: opacity, color, background-color, font-size;
-	-o-transition-property: opacity, color, background-color, font-size;
-	transition-property: opacity, color, background-color, font-size;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity, color, background-color, font-size;
+  -o-transition-property: opacity, color, background-color, font-size;
+  transition-property: opacity, color, background-color, font-size;
 }
 
 .navigation-list__item:hover {
-	opacity: 0.5;
-	color: white;
-	background-color: #808080;
-	padding-left: 5px;
-	padding-right: 5px;
+  opacity: 0.5;
+  color: white;
+  background-color: #808080;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #webdev {
-	background-color: rgb(65, 65, 65);
-	color: white;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-bottom: 3px;
-	border-radius: 25%;
+  background-color: #808080;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  border-radius: 25%;
 }
 
 .grid-link {
-	display: grid;
-	background-color: rgba(22, 22, 22, 0.795);
-	padding: 10px;
-	color: white;
-	border-radius: 10px;
-	margin-bottom: 10px;
+  display: grid;
+  background-color: rgba(22, 22, 22, 0.795);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .grid-link:hover {
-	background-color: rgba(22, 22, 22, 0.644);
+  background-color: rgba(22, 22, 22, 0.644);
 }
 
 .grid-link:visited {
-	/* Visited Link */
-	color: #9c9c9c;
+  /* Visited Link */
+  color: #9c9c9c;
 }
 
 .call-to-action {
-	font-weight: 700;
-	font-size: 24px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .work {
-	margin-top: 20px;
-	margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#kirby-couple {
+  margin-bottom: 20px;
 }
