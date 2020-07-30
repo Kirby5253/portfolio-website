@@ -183,7 +183,7 @@ label {
   text-align: left;
 }
 
-.form-group{
+.form-group {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -283,8 +283,15 @@ label {
   width: auto;
 }
 
-.work-img {
-  width: 300px;
+.card-img-top {
+  transition: transform 0.25s ease;
+}
+
+.card-img-top:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 99;
+  place-self: center;
 }
 
 /* Color change is the name of the animation to help define it */
