@@ -13,7 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   background-color: #1f1f1f;
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   color: white;
 }
@@ -52,10 +52,9 @@ h3 {
 }
 
 .social-icon {
-  max-width: 39px;
+  max-width: 50px;
   margin-bottom: 30px;
-  color: white;
-  margin: 5px;
+  margin: -3px;
 }
 
 /* Allows faded icon on hover */
@@ -86,6 +85,7 @@ h3 {
   /* Makes icons align center of page */
   text-align: center;
   padding-bottom: 50px;
+  margin-top: 15px;
 }
 
 .profile {
@@ -167,6 +167,13 @@ h3 {
   margin: 0 auto;
 }
 
+.work-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 #gform {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,6 +194,12 @@ label {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    width: 70%;
+  }
 }
 
 /* Allows grid to be resized for small devices */
@@ -408,13 +421,18 @@ Perf */
   padding-right: 5px;
 }
 
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
 #webdev {
-  background-color: #808080;
-  color: white;
+  background-color: #d8d9d8;
+  color: #1f1f1f;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 3px;
   border-radius: 25%;
+  font-weight: 700;
 }
 
 .grid-link {
