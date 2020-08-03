@@ -196,6 +196,10 @@ label {
   width: 100%;
 }
 
+.cv-link {
+  margin-top: 20px;
+}
+
 @media all and (min-width: 1200px) {
   body {
     width: 70%;
@@ -218,6 +222,9 @@ label {
   .profile__portrait {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  .cv-link {
+    margin-top: 0px;
   }
 }
 
