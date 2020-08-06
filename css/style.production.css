@@ -200,9 +200,16 @@ label {
   margin-top: 20px;
 }
 
+.skills__item {
+  margin: 5px;
+}
+
 @media all and (min-width: 1200px) {
   body {
     width: 70%;
+  }
+  .skills__item {
+    width: 30vw;
   }
 }
 
@@ -226,6 +233,9 @@ label {
   .cv-link {
     margin-top: 0px;
   }
+  .skills__item {
+    width: 70vw;
+  }
 }
 
 /* Allows grid to shrink fluidly as screen size gets smaller */
@@ -233,6 +243,9 @@ label {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .skills__item {
+    width: 50vw;
   }
 }
 
@@ -472,4 +485,17 @@ Perf */
 
 #kirby-couple {
   margin-bottom: 20px;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.about-text {
+  text-align: start;
 }
