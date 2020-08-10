@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<!-- bootstrap-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<!--animation css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="css/style.production.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -43,79 +45,82 @@
 	</header>
 	<br />
 
-	<div class="contact">
-		<h1>Contact Jacob Kirby</h1>
-		<!--Fix contact info later-->
-		1225 Koto Wood Dr
-		<br />
-		Royse City, TX 75189
-		<br />
-		<br />
-		Phone:<a href="Tel:8177983450" aria-label="number 8 1 7. 7 9 8. 3 4 5 0.">(817) 798-3450</a>
-		<br />
-		Skype:
-		<a href="Skype:kirby5253">kirby5253</a>
-		<br />
-		E-mail:<a href="mailto:kirby_jake@yahoo.com">kirby_jake@yahoo.com</a>
-		<br />
-		<br />
-		<!--Call to action-->
-		<a href="mailto:kirby_jake@yahoo.com" class="btn btn-primary">
-			<h6>Contact Me</h6>
-		</a>
-		<br />
+	<div class="animate__fadeIn animate__animated animate__slow">
 
-		<form name="gform contact-form" id="gform" enctype="text/plain" target="none" onsubmit="submitted=true;" method="POST">
-			<input type="text" name="_gotcha" style="display:none" />
-			<div class="form-group">
-				<label for="contact-name">Name:
-					<input class="form-control" type="text" name="name" id="contact-name" required>
-				</label>
-			</div>
-			<div class="form-group">
-				<label for="contact-email">E-mail:
-					<input class="form-control" style="height:35px;width: 100%;" type="email" name="email" id="contact-email" aria-describedby="emailHelp" required>
-					<small id="emailHelp" class="form-text" style="opacity: 70%;">I'll never share your email with anyone else.</small>
-				</label>
-			</div>
-			<div class="form-group">
-				<label for="contact-message">Message:
-					<textarea id="contact-message" rows="3" placeholder="Enter your message…" name="message" style="width:100%;" class="form-control" onkeypress="validateForm()" required></textarea>
-				</label>
-			</div>
-
-			<input id="sendMessage" class="btn btn-primary disabled" type="submit" value="Submit">
-
-		</form>
-
-		<iframe name="hidden-iframe" id="hidden-iframe" style="display:none;text-align: center;" onload="if(submitted){}"></iframe>
-
-
-	</div>
-	<br />
-	<br />
-
-	<footer class="page-footer">
-		<p>Connect</p>
-		<div class="social-media">
-			<!--Facebook Logo Link-->
-			<a href="https://www.facebook.com/kirby.jake/" target="_blank">
-				<img src="img/facebook_icon.png" class="social-icon" alt="Facebook" title="Facebook" />
+		<div class="contact">
+			<h1>Contact Jacob Kirby</h1>
+			<!--Fix contact info later-->
+			1225 Koto Wood Dr
+			<br />
+			Royse City, TX 75189
+			<br />
+			<br />
+			Phone:<a href="Tel:8177983450" aria-label="number 8 1 7. 7 9 8. 3 4 5 0.">(817) 798-3450</a>
+			<br />
+			Skype:
+			<a href="Skype:kirby5253">kirby5253</a>
+			<br />
+			E-mail:<a href="mailto:JakeLeeKirby@gmail.com">JakeLeeKirby@gmail.com</a>
+			<br />
+			<br />
+			<!--Call to action-->
+			<a href="mailto:JakeLeeKirby@gmail.com" class="btn btn-primary">
+				<h6>Contact Me</h6>
 			</a>
-			<!--Github Logo Link-->
-			<a href="https://github.com/Kirby5253" target="_blank">
-				<img src="img/github_icon.png" class="social-icon" alt="GitHub" title="GitHub" />
-			</a>
-			<!--Linkedin Logo Link-->
-			<a href="https://www.linkedin.com/in/jacobleekirby/" target="_blank">
-				<img src="img/linkedin_icon.png" class="social-icon" alt="LinkedIn" title="LinkedIn" />
-			</a>
-			<!--Twitter Logo Link-->
-			<a href="https://twitter.com/the_real_jkirby" target="_blank">
-				<img src="img/twitter_icon.png" class="social-icon" alt="Twitter" title="Twitter" />
-			</a>
+			<br />
+
+			<form name="gform contact-form" id="gform" enctype="text/plain" target="none" onsubmit="submitted=true;" method="POST">
+				<input type="text" name="_gotcha" style="display:none" />
+				<div class="form-group">
+					<label for="contact-name">Name:
+						<input class="form-control" type="text" name="name" id="contact-name" required>
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="contact-email">E-mail:
+						<input class="form-control" style="height:35px;width: 100%;" type="email" name="email" id="contact-email" aria-describedby="emailHelp" required>
+						<small id="emailHelp" class="form-text" style="opacity: 70%;">I'll never share your email with anyone else.</small>
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="contact-message">Message:
+						<textarea id="contact-message" rows="3" placeholder="Enter your message…" name="message" style="width:100%;" class="form-control" onkeypress="validateForm()" required></textarea>
+					</label>
+				</div>
+
+				<input id="sendMessage" class="btn btn-primary disabled" type="submit" value="Submit">
+
+			</form>
+
+			<iframe name="hidden-iframe" id="hidden-iframe" style="display:none;text-align: center;" onload="if(submitted){}"></iframe>
+
+
 		</div>
-	</footer>
+		<br />
+		<br />
+
+		<footer class="page-footer">
+			<p>Connect</p>
+			<div class="social-media">
+				<!--Facebook Logo Link-->
+				<a href="https://www.facebook.com/kirby.jake/" target="_blank">
+					<img src="img/facebook_icon.png" class="social-icon" alt="Facebook" title="Facebook" />
+				</a>
+				<!--Github Logo Link-->
+				<a href="https://github.com/Kirby5253" target="_blank">
+					<img src="img/github_icon.png" class="social-icon" alt="GitHub" title="GitHub" />
+				</a>
+				<!--Linkedin Logo Link-->
+				<a href="https://www.linkedin.com/in/jacobleekirby/" target="_blank">
+					<img src="img/linkedin_icon.png" class="social-icon" alt="LinkedIn" title="LinkedIn" />
+				</a>
+				<!--Twitter Logo Link-->
+				<a href="https://twitter.com/the_real_jkirby" target="_blank">
+					<img src="img/twitter_icon.png" class="social-icon" alt="Twitter" title="Twitter" />
+				</a>
+			</div>
+		</footer>
+	</div>
 
 	<!-- Leaving for editing in future
 	<script src="js/tota11y.min.js"></script> -->
