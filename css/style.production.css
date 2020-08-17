@@ -37,6 +37,11 @@ h3 {
   font-weight: 700;
 }
 
+#sendMessage {
+  width: fit-content;
+  align-self: center;
+}
+
 /* Custom form submit button */
 #msg-submit {
   cursor: pointer;
@@ -183,7 +188,6 @@ h3 {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  width: 75%;
 }
 
 label {
@@ -202,6 +206,28 @@ label {
 
 .skills__item {
   margin: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  align-items: baseline;
+  background-color: #d7d8d7;
+  padding: 30px;
+  border-radius: 15px;
+  color: black;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  background-color: transparent;
+  border-bottom: 1px solid black;
 }
 
 @media all and (min-width: 1200px) {
@@ -235,6 +261,20 @@ label {
   }
   .skills__item {
     width: 70vw;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact > div {
+    width: 100;
+  }
+  .contact-details {
+    width: 60vw;
+  }
+  #gform {
+    margin-top: 20px;
+    width: 60vw;
   }
 }
 
@@ -501,4 +541,10 @@ Perf */
 
 .about-text {
   text-align: start;
+}
+
+.carousel {
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

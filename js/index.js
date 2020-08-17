@@ -28,3 +28,9 @@ function validateForm() {
 
   name && email && message ? submitButton.removeClass('disabled') : null;
 }
+
+$(document).ready(function() {
+  $('.carousel').carousel({
+    interval: 3000,
+  });
+});
