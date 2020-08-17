@@ -48,52 +48,48 @@
 	<div class="animate__fadeIn animate__animated animate__slow">
 
 		<div class="contact">
-			<h1>Contact Jacob Kirby</h1>
-			<!--Fix contact info later-->
-			1225 Koto Wood Dr
-			<br />
-			Royse City, TX 75189
-			<br />
-			<br />
-			Phone:<a href="Tel:8177983450" aria-label="number 8 1 7. 7 9 8. 3 4 5 0.">(817) 798-3450</a>
-			<br />
-			Skype:
-			<a href="Skype:kirby5253">kirby5253</a>
-			<br />
-			E-mail:<a href="mailto:JakeLeeKirby@gmail.com">JakeLeeKirby@gmail.com</a>
-			<br />
-			<br />
-			<!--Call to action-->
-			<a href="mailto:JakeLeeKirby@gmail.com" class="btn btn-primary">
-				<h6>Contact Me</h6>
-			</a>
-			<br />
+			<div class="contact-details">
+				<h1>Contact Me</h1>
+				Phone:<a class="btn btn-dark" href="Tel:8177983450" aria-label="number 8 1 7. 7 9 8. 3 4 5 0.">(817) 798-3450</a>
+				<br />
+				Skype:
+				<a class="btn btn-dark" href="Skype:kirby5253">kirby5253</a>
+				<br />
+				E-mail:<a class="btn btn-dark" href="mailto:JakeLeeKirby@gmail.com">JakeLeeKirby {at} gmail.com</a>
+				<br />
+				<br />
+				<!--Call to action-->
+				<a href="mailto:JakeLeeKirby@gmail.com" class="btn btn-dark">
+					<h6>Looking for a developer? Get in touch.</h6>
+				</a>
+			</div>
 
-			<form name="gform contact-form" id="gform" enctype="text/plain" target="none" onsubmit="submitted=true;" method="POST">
-				<input type="text" name="_gotcha" style="display:none" />
-				<div class="form-group">
-					<label for="contact-name">Name:
-						<input class="form-control" type="text" name="name" id="contact-name" required>
-					</label>
-				</div>
-				<div class="form-group">
-					<label for="contact-email">E-mail:
-						<input class="form-control" style="height:35px;width: 100%;" type="email" name="email" id="contact-email" aria-describedby="emailHelp" required>
-						<small id="emailHelp" class="form-text" style="opacity: 70%;">I'll never share your email with anyone else.</small>
-					</label>
-				</div>
-				<div class="form-group">
-					<label for="contact-message">Message:
-						<textarea id="contact-message" rows="3" placeholder="Enter your message…" name="message" style="width:100%;" class="form-control" onkeypress="validateForm()" required></textarea>
-					</label>
-				</div>
+			<div class="contact-form-container">
+				<form name="gform contact-form" id="gform" enctype="text/plain" target="none" onsubmit="submitted=true;" action="php/contact-form-handler.php" method="POST">
+					<input type="text" name="_gotcha" style="display:none" />
+					<div class="form-group">
+						<label for="contact-name">Name:
+							<input class="form-control" type="text" name="name" id="contact-name" required>
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="contact-email">E-mail:
+							<input class="form-control" style="height:35px;width: 100%;" type="email" name="email" id="contact-email" aria-describedby="emailHelp" required>
+							<small id="emailHelp" class="form-text" style="opacity: 70%;">I'll never share your email with anyone else.</small>
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="contact-message">Message:
+							<textarea id="contact-message" rows="3" placeholder="Enter your message…" name="message" style="width:100%;" class="form-control" onkeypress="validateForm()" required></textarea>
+						</label>
+					</div>
 
-				<input id="sendMessage" class="btn btn-primary disabled" type="submit" value="Submit">
+					<input id="sendMessage" class="btn btn-dark disabled" type="submit" value="Submit">
 
-			</form>
+				</form>
 
-			<iframe name="hidden-iframe" id="hidden-iframe" style="display:none;text-align: center;" onload="if(submitted){}"></iframe>
-
+				<iframe name="hidden-iframe" id="hidden-iframe" style="display:none;text-align: center;" onload="if(submitted){}"></iframe>
+			</div>
 
 		</div>
 		<br />
@@ -122,8 +118,8 @@
 		</footer>
 	</div>
 
-	<!-- Leaving for editing in future
-	<script src="js/tota11y.min.js"></script> -->
+	Leaving for editing in future
+	<script src="js/tota11y.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
