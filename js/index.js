@@ -43,7 +43,11 @@ $(document).ready(function() {
 
     // Construct an HTTP request
     var xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action, true);
+    xhr.open(
+      'POST',
+      'https://mblnwogcmh.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer',
+      true,
+    );
     xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
@@ -63,7 +67,6 @@ $(document).ready(function() {
           $(this).remove();
         });
         $('#gform').prepend('Something went wrong, please use the contact links...');
-        console.error(JSON.parse(response.target.response).message);
       }
     };
   });
