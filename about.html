@@ -1,117 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Jake's Portfolio</title>
+		<link rel="shortcut icon" href="img/kirby_icon.png" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<!-- bootstrap-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<!--animation css-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:400,700"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style.production.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Jake's Portfolio</title>
-  <link rel="shortcut icon" href="img/kirby_icon.png">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <!-- bootstrap-->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-  <!--animation css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+	<body>
+		<header class="page-header">
+			<nav
+				class="navbar navbar-expand-sm navbar-dark main-navigation page-header__item"
+			>
+				<a class="navbar-brand" href="index.html">
+					<h1>Jacob Kirby</h1>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item active" role="presentation">
+							<a class="nav-link" href="about.html"
+								>About Me<span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a
+								class="nav-link"
+								href="work.html"
+								tabindex="-1"
+								aria-disabled="true"
+								>Work</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<br />
 
-<body>
+		<div class="animate__fadeIn animate__animated animate__slow">
+			<div class="about">
+				<h1>About Me</h1>
+				<!--Add a personalized pic here-->
+				<img
+					src="img/kirby_couple_pic.jpg"
+					width="400"
+					alt="Jake and Allison Portrait"
+					id="kirby-couple"
+				/>
 
-  <header class="page-header">
-    <nav class="navbar navbar-expand-sm navbar-dark main-navigation page-header__item">
-      <a class="navbar-brand" href="index.html">
-        <h1>Jacob Kirby</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item " role="presentation">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item active" role="presentation">
-            <a class="nav-link" href="about.html">About Me<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="work.html" tabindex="-1" aria-disabled="true">Work</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <br />
+				<p class="about-text">
+					I'm Jacob, and I'm a husband, hunter, teacher, and avid dog lover! I
+					have been teaching middle and high school math for the last 5 years,
+					but recently I've felt a calling for something to change in my life. I
+					wanted to find an environment where I could be inspired and
+					challenged. That's the reason I've decided to better myself by
+					becoming a web developer.
+				</p>
 
+				<div>
+					<ul class="skills">
+						<li>
+							<img class="skills-item" src="img/skills/html.png" alt="html5" />
+						</li>
+						<li>
+							<img class="skills-item" src="img/skills/css.png" alt="css" />
+						</li>
+						<li>
+							<img class="skills-item" src="img/skills/react.svg" alt="react" />
+						</li>
+						<li>
+							<img class="skills-item" src="img/skills/node.png" alt="node" />
+						</li>
+						<li>
+							<img
+								class="skills-item skills-item__js"
+								src="img/skills/js.png"
+								alt="javascript"
+							/>
+						</li>
+					</ul>
+				</div>
 
-  <div class="animate__fadeIn animate__animated animate__slow">
-    <div class="about">
-      <h1>About Me</h1>
-      <!--Add a personalized pic here-->
-      <img src="img/kirby_couple_pic.jpg" width="400" alt="Jake and Allison Portrait" id="kirby-couple">
+				<p class="about-text">
+					When I was in college, I never felt like I was particularly drawn to
+					any major or career. I went without a plan unfortunately, and that was
+					a struggle for me for some time. I decided to pursue teaching in the
+					hopes that I could become a role model for the young men and women of
+					tomorrow, but as the years pass by, I felt less passionate towards
+					teaching. Through meticulous research and networking, I was moved to
+					begin a journey learning <strong>web development</strong> as a way to
+					challenge myself to jump out of rut that I had been going through with
+					teaching.
+				</p>
+				<a href="files/cv.pdf" class="btn btn-primary" target="_blank"
+					>View my Resume</a
+				>
+			</div>
 
-      <p class="about-text">
-        I'm Jacob, and I'm a husband, hunter, teacher, and avid dog lover! I have been teaching middle and high school math for the last 5 years, but recently I've felt a calling for something to change in my life. I wanted to find an environment where I could be inspired and challenged. That's the reason I've decided to better myself by becoming a web developer.
-      </p>
+			<footer class="page-footer">
+				<p>Connect</p>
+				<div class="social-media">
+					<!--Facebook Logo Link-->
+					<a href="https://www.facebook.com/kirby.jake/" target="_blank">
+						<img
+							src="img/facebook_icon.png"
+							class="social-icon"
+							alt="Facebook"
+							title="Facebook"
+						/>
+					</a>
+					<!--Github Logo Link-->
+					<a href="https://github.com/Kirby5253" target="_blank">
+						<img
+							src="img/github_icon.png"
+							class="social-icon"
+							alt="GitHub"
+							title="GitHub"
+						/>
+					</a>
+					<!--Linkedin Logo Link-->
+					<a href="https://www.linkedin.com/in/jacobleekirby/" target="_blank">
+						<img
+							src="img/linkedin_icon.png"
+							class="social-icon"
+							alt="LinkedIn"
+							title="LinkedIn"
+						/>
+					</a>
+					<!--Twitter Logo Link-->
+					<a href="https://twitter.com/the_real_jkirby" target="_blank">
+						<img
+							src="img/twitter_icon.png"
+							class="social-icon"
+							alt="Twitter"
+							title="Twitter"
+						/>
+					</a>
+				</div>
+			</footer>
+		</div>
 
-
-      <div>
-        <ul class="skills">
-          <li>
-            <img class="skills-item" src="img/skills/html.png" alt='html5'>
-          </li>
-          <li>
-            <img class="skills-item" src="img/skills/css.png" alt='css'>
-          </li>
-          <li>
-            <img class="skills-item" src="img/skills/react.png" alt='react'>
-          </li>
-          <li>
-            <img class="skills-item" src="img/skills/node.png" alt='node'>
-          </li>
-          <li>
-            <img class="skills-item skills-item__js" src="img/skills/js.png" alt='javascript'>
-          </li>
-        </ul>
-      </div>
-
-      <p class="about-text">
-        When I was in college, I never felt like I was particularly drawn to any major or career. I went without a plan unfortunately, and that was a struggle for me for some time. I decided to pursue teaching in the hopes that I could become a role model for the young men and women of tomorrow, but as the years pass by, I felt less passionate towards teaching. Through meticulous research and networking, I was moved to begin a journey learning <strong>web development</strong> as a way to challenge myself to jump out of rut that I had been going through with teaching.
-      </p>
-      <a href="files/cv.pdf" class="btn btn-primary" target="_blank">View my Resume</a>
-    </div>
-
-
-
-    <footer class="page-footer">
-      <p>Connect</p>
-      <div class="social-media">
-        <!--Facebook Logo Link-->
-        <a href="https://www.facebook.com/kirby.jake/" target="_blank">
-          <img src="img/facebook_icon.png" class="social-icon" alt="Facebook" title="Facebook" />
-        </a>
-        <!--Github Logo Link-->
-        <a href="https://github.com/Kirby5253" target="_blank">
-          <img src="img/github_icon.png" class="social-icon" alt="GitHub" title="GitHub" />
-        </a>
-        <!--Linkedin Logo Link-->
-        <a href="https://www.linkedin.com/in/jacobleekirby/" target="_blank">
-          <img src="img/linkedin_icon.png" class="social-icon" alt="LinkedIn" title="LinkedIn" />
-        </a>
-        <!--Twitter Logo Link-->
-        <a href="https://twitter.com/the_real_jkirby" target="_blank">
-          <img src="img/twitter_icon.png" class="social-icon" alt="Twitter" title="Twitter" />
-        </a>
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <!-- Leaving for editing in future
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<!-- Leaving for editing in future
 	<script src="js/tota11y.min.js"></script> -->
-  <script src="js/bootstrap.min.js"></script>
-</body>
-
+		<script src="js/bootstrap.min.js"></script>
+	</body>
 </html>
