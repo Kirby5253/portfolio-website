@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Jake's Portfolio</title>
+  <link rel="shortcut icon" href="img/kirby_icon.png" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <!-- bootstrap-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <!--animation css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <!--Header including the logo and nav bar-->
+  <header class="page-header">
+    <div class="page-header__item" style="max-width: 1200px;">
+      <nav class="navbar navbar-expand-sm navbar-dark main-navigation page-header__item">
+        <a class="navbar-brand" href="index.html">
+          Jacob Kirby
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item active" role="presentation">
+              <a class="nav-link" href="work.html" tabindex="-1" aria-disabled="true">Work</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+  </header>
+  <br />
+
+  <div class="animate__fadeIn animate__animated animate__slow">
+
+    <div class="work-heading work-container">
+      <h1>Recent Work Examples</h1>
+      <a target="_blank" href="https://github.com/Kirby5253/" class="btn btn-primary">More on GitHub</a>
+    </div>
+
+    <div class="work-container-temp">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 0;width: 80vw; max-width: 900px;">
+        <ol class="carousel-indicators work-temp-indicator">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/work/react-js-app-myflix.png" alt="First slide">
+            <div class="card-info" style="padding-bottom: 40px;">
+              <div class="card-body">
+                <h5 class="card-title">ReactJS (MERN) Web App - MyFlix</h5>
+                <p class="card-text">
+                  For this project, I created an interface for a ReactJS app which loaded a Heroku-hosted REST API that I created to show details on various movies.
+                  <br />
+                  <br />
+                  The development objective of this movie index project was to learn and master the methods to create a full front- and back-end project from scratch using the MERN stack. Additionally, I chose to include Bootstrap for the style of the app. I specifically made great use of the nav and card components which made the layout of my app really shine.
+                </p>
+                <a href="case-study/myflix.html">View Case Study</a>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" href="https://github.com/Kirby5253/myflix-app" class="btn btn-primary">GitHub Repo</a>
+                <a target="_blank" href="https://myflixdb5253.herokuapp.com/client/" class="btn btn-primary">View Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/work/meetup.png" alt="First slide">
+            <div class="card-info" style="padding-bottom: 40px;">
+              <div class="card-body">
+                <h5 class="card-title">ReactJS Meetup Progressive Web App</h5>
+                <p class="card-text">
+                  For this project, I created a meetup app that uses the ReactJS framework. The development process was test-driven using Jest, Cucumber, and Puppeteer.
+                  <br />
+                  <br />
+                  The development objective was to create a Progressive Web App that allows users to access an API of global meetup events from Meetup.com. The app is capable of displaying local event numbers, default location selection, offline access, and global search/suggestion features. The style was cultivated using my own custom CSS where I experimented with some new, lighter color palettes.
+
+                </p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" href="https://github.com/Kirby5253/meetup" class="btn btn-primary">GitHub Repo</a>
+                <a target="_blank" href="https://kirby5253.github.io/meetup/" class="btn btn-primary">View Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/work/vue-todo-app.png" alt="First slide">
+            <div class="card-info" style="padding-bottom: 40px;">
+              <div class="card-body">
+                <h5 class="card-title">Vue.js Todo Web App</h5>
+                <p class="card-text">
+                  For this project, I created a todo app that uses the Vue.js framework. This app allows the user to create, update, delete, and complete todo tasks.
+                  <br />
+                  <br />
+                  The development objective of this project was to experiment and conquer this new-to-me framework. After using React for so long, it was exciting to explore the options and utility of Vue. Although my heart belongs to React, I could definitely see myself using Vue in my daily work. I also used Material to design the minimalist grey and white look.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" href="https://github.com/Kirby5253/todo-app" class="btn btn-primary">GitHub Repo</a>
+                <a target="_blank" href="https://kirby5253.github.io/todo-app/" class="btn btn-primary">View Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/work/movie-api.png" alt="Second slide">
+            <div class="card-body">
+              <h5 class="card-title">Node.js REST API</h5>
+              <p class="card-text">
+                For this project, I created a Heroku-hosted REST API using the MERN stack. The API was created for the backend of my ReactJS MyFlix app which accessed a MongoDB that I created with details of some of my favorite Marvel Cinematic Universe movies.
+                <br />
+                <br />
+                The development objective of the API was to learn the MERN tech stack. Since this was my first experiment with Node and the backend, I was a little nervous, but luckily I was able to get the hang of it quickly. The API utilized user authentication and authorization to register new users or login existing users. The app client allowed users the ability to create, read, update, and delete all data.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a target="_blank" href="https://github.com/Kirby5253/myflix-app" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/work/javascript-app-new.png" alt="Third slide">
+            <div class="card-body">
+              <h5 class="card-title">Javascript/jQuery Web App - PokéDex</h5>
+              <p class="card-text">
+                For this project, I created a jQuery web app that loaded a Pokemon API to map all entries into a searchable list and that will show the stats of the original 150 Pokémon, when selected.
+                <br />
+                <br />
+                The development objective was to experiment and master jQuery and Javascript. Since this was my very first project with JS/jQuery, it took a little bit of time to differentiate the two, but once I got the hang of jQuery, I've started implementing it into more of my projects. This was also my first dive into Bootstrap which made me fall in love with the possibilities of this library.</p>
+            </div>
+            <div class="card-footer">
+              <a target="_blank" href="https://github.com/Kirby5253/pokedex-app-new" class="btn btn-primary">GitHub Repo</a>
+              <a target="_blank" href="https://kirby5253.github.io/pokedex-app-new/" class="btn btn-primary">View Live</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video style="height: 50vh;" class="card-img-top" controls autoplay loop>
+              <source src="img/work/chatAppVideo.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">React Native Chat Mobile App</h5>
+              <p class="card-text">
+                For this project, I created a mobile chat app using React Native and Expo. The chat app allows users to create a username and select a background color on the landing screen. The user can then send text, capture/send images, and share current location to the chat room once logged in. The backend authentication was created as an AWS serverless function, and the chat's database was hosted on Firestore by Google.
+                <br />
+                <br />
+                The development objective of this project was to dive into the world of mobile app building with Expo and React Native. I found my experience with React to be helpful in the beginning while I was learning how React Native worked. After the success of this project, I'm excited and looking forward to the next opportunity to create more using React Native.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a target="_blank" href="https://github.com/Kirby5253/native-chat-app" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev car-button" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon work-temp-nav__left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next car-button" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon work-temp-nav__right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <footer class="page-footer">
+      <p>Connect</p>
+      <div class="social-media">
+        <!--Facebook Logo Link-->
+        <a href="https://www.facebook.com/kirby.jake/" target="_blank">
+          <img src="img/social/facebook_icon.png" class="social-icon" alt="Facebook" title="Facebook" />
+        </a>
+        <!--Github Logo Link-->
+        <a href="https://github.com/Kirby5253" target="_blank">
+          <img src="img/social/github_icon.png" class="social-icon" alt="GitHub" title="GitHub" />
+        </a>
+        <!--Linkedin Logo Link-->
+        <a href="https://www.linkedin.com/in/jacobleekirby/" target="_blank">
+          <img src="img/social/linkedin_icon.png" class="social-icon" alt="LinkedIn" title="LinkedIn" />
+        </a>
+        <!--Twitter Logo Link-->
+        <a href="https://twitter.com/the_real_jkirby" target="_blank">
+          <img src="img/social/twitter_icon.png" class="social-icon" alt="Twitter" title="Twitter" />
+        </a>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Leaving for editing in future
+	<script src="js/tota11y.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
