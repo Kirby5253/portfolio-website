@@ -101,7 +101,7 @@ h3 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 20vh;
+  padding-top: 200px;
 }
 
 .profile-title {
@@ -210,7 +210,11 @@ h3 {
 }
 
 .about {
-  padding-top: 10vh;
+  padding-top: 100px;
+}
+
+.about h2 {
+  margin: 2vh;
 }
 
 .contact-div {
@@ -228,7 +232,7 @@ h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 3vh 0;
 }
 
 #gform {
@@ -356,6 +360,9 @@ label {
   .profile__portrait {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  .profile-container {
+    padding-top: 100px;
   }
   .cv-link {
     margin-top: 20px;
@@ -534,8 +541,15 @@ card-img-link {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 3px;
-  border-radius: 25%;
+  border-radius: 5px;
   font-weight: 700;
+}
+
+#webdev::before {
+  content: '<';
+}
+#webdev::after {
+  content: ' />';
 }
 
 .grid-link {
@@ -569,6 +583,8 @@ card-img-link {
 
 #kirby-couple {
   margin-bottom: 20px;
+  width: 80%;
+  max-width: 400px;
 }
 
 .skills {
