@@ -320,11 +320,24 @@ label {
   height: 100%;
 }
 
-.work-container {
+.work-container,
+work-container__case-study {
   display: flex;
   flex-direction: column;
   padding-top: 6vh;
   margin: 0;
+}
+
+.work-container__case-study {
+  padding-top: 100px;
+  max-width: 900px;
+}
+
+/* handles centering the case study in the page */
+.case-study__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media all and (min-width: 1200px) {
